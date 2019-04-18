@@ -1,5 +1,5 @@
 # GemFire WAN Conflict Resolver
-
+## Gemire V8
 An WAN gateway conflict resolver example. Checks that the operation is an update, old distributed-system-id is not equal to new distributed-sytem-id and uses the GatewayConflictHelper to change the event value to the new value.
 
 ### GemFire
