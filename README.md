@@ -3,14 +3,14 @@
 An WAN gateway conflict resolver example. Checks that the operation is an update, old distributed-system-id is not equal to new distributed-sytem-id and uses the GatewayConflictHelper to change the event value to the new value.
 
 ### GemFire
-<gateway-conflict-resolver>
-    <class-name>datatx.util.gemfire.wan.ConflictResolver</class-name>
-</gateway-conflict-resolver>
+    <gateway-conflict-resolver>
+        <class-name>datatx.util.gemfire.wan.ConflictResolver</class-name>
+    </gateway-conflict-resolver>
 
 ### Spring
-<gfe:gateway-conflict-resolver ref="ConflictResolver" />
+    <gfe:gateway-conflict-resolver ref="ConflictResolver" />
 
-<bean id="ConflictResolver" class="datatx.util.gemfire.wan.ConflictResolver" />
+    <bean id="ConflictResolver" class="datatx.util.gemfire.wan.ConflictResolver" />
 
 ### Server Log
 Logs a conflict warning 
